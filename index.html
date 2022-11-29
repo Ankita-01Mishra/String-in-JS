@@ -110,16 +110,14 @@
     <pre style="font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif;">
         var Palin_Check = (str) =>
         {
-           let result=str.toUpperCase();
-           let rev = "";
-            for (let i = result.length - 1; i >= 0; i--) {
-                rev += result[i];
-            }
-            // return rev;
-            if(rev===result){
-              return "True"
-            }
-            return "False";
+          let rev = "";
+          for (let i = str.length - 1; i >= 0; i--) {
+              rev += str[i];
+          }
+          if(rev===str){
+            return "True"
+          }
+          return "False";
          }
     </pre>
     <h2>9. Reverse the String</h2>
